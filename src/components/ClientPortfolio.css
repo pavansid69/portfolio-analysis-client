@@ -1,0 +1,104 @@
+/* Card container */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Table Styling */
+.portfolio-table, .sentiment-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.portfolio-table th, .portfolio-table td,
+.sentiment-summary-table th, .sentiment-summary-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.portfolio-table th, .sentiment-summary-table th {
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+.portfolio-table td, .sentiment-summary-table td {
+    font-size: 16px;
+}
+
+/* Positive/Negative Colors */
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+/* Satisfaction Score Styling */
+.satisfaction-score {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sentiment Score Styling */
+.sentiment-score {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 200px; /* Adjust position to avoid overlap with satisfaction */
+    width: fit-content;
+}
+
+.sentiment-score.positive {
+    color: white;
+    background-color: green;
+}
+
+.sentiment-score.negative {
+    color: white;
+    background-color: red;
+}
+
+/* Risk Analysis Section */
+.risk-analysis {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Data Alignment */
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Remove table border collapse in summary table */
+.sentiment-summary-table th, .sentiment-summary-table td {
+    border: 1px solid #ddd;
+}
